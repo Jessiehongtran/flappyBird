@@ -31,6 +31,19 @@ while (i< 5){
     i += 1
 }
 
+const bird = document.createElement("div")
+const birdY = getRndInteger(400, 600) + 100;  
+
+bird.style.position = "absolute"
+bird.style.width = "60px"
+bird.style.height = "60px"
+bird.style.backgroundColor = "red"
+bird.style.left = `${x - 200}px`
+bird.style.top = `${birdY}px`
+
+container.appendChild(bird)
+
+
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
   }
