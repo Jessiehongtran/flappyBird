@@ -32,6 +32,7 @@ while (i< 5){
 }
 
 const bird = document.createElement("div")
+bird.setAttribute("id", "bird")
 const birdY = getRndInteger(400, 600) + 100;  
 
 bird.style.position = "absolute"
